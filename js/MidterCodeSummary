@@ -1,0 +1,29 @@
+// Summary of the file function
+
+// This JavaScript code is for a login system where users can log in, view their profile, and see other users' profiles in a dashboard.
+// Below is a breakdown of how it works:
+// 1. User Data:
+// The users array contains information about different users, like their name, email, net worth, and role (admin or regular user). Each user also has a userName and password for login.
+// 2. Login Form:
+// When the page loads a login form is shown. This form includes inputs for entering a username and password and also a background video is displayed.
+// 3. Username and Password Validation:
+// There are two functions:
+// userNameVal() checks if the username is empty or has spaces, and makes sure the username matches one in the users list.
+// userPassVal() does the same for the password, checking if it’s empty or has spaces, and ensuring the password matches the one for the given username.
+// 4. Dashboard Display:
+// If the login is successful, the system shows the logged-in user’s profile (name, email, role) who can see other profiles based on his/her role.
+// If the logged-in user is an admin, it shows all other users (admins and users).
+// If the user is a regular user, it only shows admin profiles.
+// All the profiles are displayed in a grid layout using the Masonry layout for a neat, responsive design.
+// 5. Buttons and Interactions:
+// After login, the "Log In" button disappears, and the user profile cards appear.
+// There is a "Log Out" button that hides the profile cards and shows the login form again.
+// Each user card has a "Close Account" button. Only admins can remove cards from the dashboard by clicking this button.
+// 6. Responsive Design:
+// The layout is created to be responsive so that it adjusts on different screen sizes. The profile cards are arranged in grid and the layout automatically updates when a card is removed.
+// 7. Error Handling:
+// If the user leaves the username or password field empty, or if they enter incorrect details, the system shows an error message and asks them to fix it.
+// In Short:
+// This code allows users to log in, view their own profile, and see a list of other users. Admins can see all users, while regular users can only see admins.
+//The system ensures the form inputs are valid and shows user profiles in a neat, responsive grid layout.
+//admins have deletion power only on user account.
